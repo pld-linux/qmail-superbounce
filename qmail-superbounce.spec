@@ -5,8 +5,6 @@ Version:	0.95
 Release:	2
 License:	GPL
 Group:		Networking/Daemons
-Group(de):	Netzwerkwesen/Server
-Group(pl):	Sieciowe/Serwery
 Source0:	%{name}-%{version}.tar.gz
 Requires:	qmail >= 1.03-38
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
