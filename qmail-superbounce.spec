@@ -7,8 +7,8 @@ Group:		Networking/Daemons
 Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
 Source0:	%{name}-%{version}.tar.gz
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	qmail >= 1.03-38
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This is an external bouncer for qmail. It can pack the bounced message
@@ -21,21 +21,22 @@ the Date: field to localtime. All of these are configuration options.
 %build
 %configure \
 	--with-qmail-queue=%{_libdir}/qmail/qmail-queue \
---with-controldir=%{_sysconfdir}/qmail/control
+	--with-controldir=%{_sysconfdir}/qmail/control
 
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-
 %{__make} install DESTDIR="$RPM_BUILD_ROOT"
+
 echo "superbounce" > $RPM_BUILD_ROOT%{_sysconfdir}/qmail/control/extbouncer
 install -d $RPM_BUILD_ROOT%{_sysconfdir}/qmail/alias/
 echo "|%{_sbindir}/qmail-superbounce" > $RPM_BUILD_ROOT%{_sysconfdir}/qmail/alias/.qmail-superbounce
-%find_lang %{name}
 
 gzip -9nf README NEWS ChangeLog
+
+%find_lang %{name}
 
 %post
 if [ -f /var/lock/subsys/qmail ]; then
