@@ -1,6 +1,6 @@
 Summary:	External bounce-message translator/formatter for qmail
 Name:		qmail-superbounce
-Version:	0.9
+Version:	0.95
 Release:	1
 License:	GPL
 Group:		Networking/Daemons
