@@ -38,7 +38,6 @@ echo "superbounce" > $RPM_BUILD_ROOT%{_sysconfdir}/qmail/control/extbouncer
 install -d $RPM_BUILD_ROOT%{_sysconfdir}/qmail/alias/
 echo "|%{_sbindir}/qmail-superbounce" > $RPM_BUILD_ROOT%{_sysconfdir}/qmail/alias/.qmail-superbounce
 
-gzip -9nf README NEWS ChangeLog
 
 %find_lang %{name}
 
@@ -57,7 +56,7 @@ fi
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README NEWS ChangeLog
 %attr(755,root,root) %{_sbindir}/*
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/qmail/control/*
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/qmail/alias/.qmail-superbounce
