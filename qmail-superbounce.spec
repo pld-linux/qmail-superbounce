@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Networking/Daemons
 Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	e9ae74a7f31c4cbd24c3f6f8cadfb9d1
 Requires:	qmail >= 1.03-38
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
