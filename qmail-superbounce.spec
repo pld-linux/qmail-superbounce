@@ -59,5 +59,5 @@ fi
 %defattr(644,root,root,755)
 %doc README NEWS ChangeLog
 %attr(755,root,root) %{_sbindir}/*
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/qmail/control/*
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/qmail/alias/.qmail-superbounce
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/qmail/control/*
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/qmail/alias/.qmail-superbounce
