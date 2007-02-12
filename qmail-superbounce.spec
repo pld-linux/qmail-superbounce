@@ -1,5 +1,5 @@
 Summary:	External bounce-message translator/formatter for qmail
-Summary(pl):	Zewnêtrzny translator/formater odbitych wiadomo¶ci dla qmaila
+Summary(pl.UTF-8):   ZewnÄ™trzny translator/formater odbitych wiadomoÅ›ci dla qmaila
 Name:		qmail-superbounce
 Version:	0.95
 Release:	2
@@ -15,10 +15,10 @@ This is an external bouncer for qmail. It can pack the bounced message
 int MIME attachment, tranlasate it to recipient's language, and change
 the Date: field to localtime. All of these are configuration options.
 
-%description -l pl
-To jest zewnêtrzny bouncer dla qmaila. Mo¿e zapakowaæ odbit± wiadomo¶æ
-w za³±cznik MIME, przet³umaczyæ j± na jêzyk odbiorcy, zmieniæ pole
-Date: na czas lokalny. Wszystko to ustawia siê w konfiguracji.
+%description -l pl.UTF-8
+To jest zewnÄ™trzny bouncer dla qmaila. MoÅ¼e zapakowaÄ‡ odbitÄ… wiadomoÅ›Ä‡
+w zaÅ‚Ä…cznik MIME, przetÅ‚umaczyÄ‡ jÄ… na jÄ™zyk odbiorcy, zmieniÄ‡ pole
+Date: na czas lokalny. Wszystko to ustawia siÄ™ w konfiguracji.
 
 %prep
 %setup -q
