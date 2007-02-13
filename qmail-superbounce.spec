@@ -1,5 +1,5 @@
 Summary:	External bounce-message translator/formatter for qmail
-Summary(pl.UTF-8):   Zewnętrzny translator/formater odbitych wiadomości dla qmaila
+Summary(pl.UTF-8):	Zewnętrzny translator/formater odbitych wiadomości dla qmaila
 Name:		qmail-superbounce
 Version:	0.95
 Release:	2
